@@ -3,8 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <title>HTML</title>
+    <style type="text/css">
+	    body{
+	    	font-family: "Times New Roman",Georgia,Serif;
+	    	margin-left: 50px;
+	    }
+		.titles{
+			width: 100%;
+			float: left;
+		}
+		.titles .label{
+			float: left;
+			width: 100px;
+		}
+		.titles .item{
+			float: left;
+			width: 200px;
+		}
+		.titles .clear{
+			clear: both;
+			margin-bottom: 5px;
+		}
+		.titles .question{
+			margin-left: 40px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+
+		}
+		.titles .answer{
+			margin-left: 70px;
+		}
+		.titles .submit{
+			font-size: 20px;
+			background: transparent;
+			border-radius: 10px;
+			cursor: pointer;
+			margin-bottom:50px;
+		}
+		.show{
+			background: rgba(0,0,0,0.2);
+		}
+    </style>
 </head>
 <body>
+	<div class="titles">
+		<h1>统一建模语言理论测试</h1>
+			<div class="label">考试科目：</div><div class="item">统一建模语言</div>
+			<div class="label">时间：</div><div class="item">100分钟</div> 
+			<div class="label">得分：</div><div class="item">100</div> 
+			<div class="clear"></div>
+			<div class="label">班级：</div><div class="item"><input type="text" value="1班"></div>
+			<div class="label">学号：</div><div class="item"><input type="text" value="001"></div> 
+			<div class="label">姓名：</div><div class="item"><input type="text" value="王小闹"></div> 
+	</div>
+		<div class="titles tiankong">
+		<h1>一、填空题（每空5分，共20分）</h1>
+		<p class="question">1.UML的中文全称是： <input type="text" value="统一建模语言"></p>
+		<p class="question">2.对象最突出的特征是： <input type="text" value="封装性"> <input type="text" value="继承性"> <input type="text" value="多态性"></p>
+	</div>
+	<div class="titles xuanze">
+		<h1>二、选择题（每题10分，共20分）</h1>
+		<p class="question">1.UML与软件工程的关系是：</p>
+		<p class="answer"><input type="radio" name="q1" value="(A) UML就是软件工程">(A) UML就是软件工程</p>
+		<p class="answer"><input type="radio" name="q1" checked value="(B) UML参与到软件工程中软件开发过程的几个阶段">(B) UML参与到软件工程中软件开发过程的几个阶段</p>
+		<p class="answer"><input type="radio" name="q1" value="(C) UML与软件工程无关">(C) UML与软件工程无关</p>
+		<p class="answer"><input type="radio" name="q1" value="(D) UML是软件工程的一部分">(D) UML是软件工程的一部分</p>
 
+		<p class="question">2.Java语言支持：</p>
+		<p class="answer"><input type="radio" name="q2" checked value="(A) 单继承">(A) 单继承</p>
+		<p class="answer"><input type="radio" name="q2" value="(B) 多继承">(B) 多继承</p>
+		<p class="answer"><input type="radio" name="q2" value="(C) 单继承和多继承都支持">(C) 单继承和多继承都支持</p>
+		<p class="answer"><input type="radio" name="q2" value="(D) 单继承和多继承都不支持">(D) 单继承和多继承都不支持</p>
+	</div>
+	<div class="titles duoze">
+		<h1>三、多择题（每题10分，共20分）</h1>
+		<p class="question">1.用例的粒度分为以下哪三种：</p>
+		<p class="answer"><input type="checkbox" name="q3" checked value="(A) 概述级">(A) 概述级</p>
+		<p class="answer"><input type="checkbox" name="q3" checked value="(B) 需求级">(B) 需求级</p>
+		<p class="answer"><input type="checkbox" name="q3" value="(C) 用户目标级">(C) 用户目标级</p>
+		<p class="answer"><input type="checkbox" name="q3" checked value="(D) 子功能级">(D) 子功能级</p>
+
+		<p class="question">2.Java语言支持：</p>
+		<p class="answer"><input type="checkbox" name="q4" checked value="">(A) 名称(Name)</p>
+		<p class="answer"><input type="checkbox" name="q4" checked value="(B) 属性(Attribute)">(B) 属性(Attribute)</p>
+		<p class="answer"><input type="checkbox" name="q4" checked value="(C) 操作(Operation)">(C) 操作(Operation)</p>
+		<p class="answer"><input type="checkbox" name="q4" value="(D) 方法(Function)">(D) 方法(Function)</p>
+	</div>
+	<div class="titles panduan">
+		<h1>四、判断题（每题10分，共20分）</h1>
+		<p class="question">1.用例图只是用于和客户交流和沟通的，用于确定需求。 
+		<input type="radio" name="q5" value="正确">√ <input type="radio" name="q5" checked value="错误">×</p>
+
+		<p class="question">2.在状态图中，终止状态在一个状态图中允许有任意多个。 
+		<input type="radio" name="q6" checked value="正确">√ <input type="radio" name="q6" value="错误">×</p>
+	</div>
+	<div class="titles">
+		<h1>五、简答题（每题20分，共20分）</h1>
+		<p class="question">1.简述什么是模型以及模型的表现形式？ 
+		<p class="question">
+			<textarea id="q7" cols="100" rows="10">模型是对现实世界的简化和抽象，模型的对所研究的系统、过程、事务或概念的一种表达形式。可以是物理实体；可以是某种图形；或者是一种数学表达式。
+			</textarea>
+		</p>
+	</div>
+	<div class="titles">
+		<div class="show" id="answer"></div>
+		<button type="button" class="submit" onclick="_submit()">计算分数</button>
+	</div>
+	
+
+	<script type="text/javascript">
+	function _submit() {
+		// body...
+		var answer = "<h3>填空题回答：</h3>";
+		var tiankong = document.getElementsByClassName('tiankong')[0].getElementsByClassName('question');
+		for(var i = 0 ; i < tiankong.length;i++){
+			answer = answer + "<p>";
+			var temp = tiankong[i].getElementsByTagName('input');
+			for(var j = 0 ; j < temp.length;j++){
+				answer = answer + temp[j].value+"   ";
+			}
+			answer = answer+"</p>";
+		}
+
+		answer = answer+"<h3>选择题回答：</h3>";
+		var xuanze = document.getElementsByClassName('xuanze')[0].getElementsByClassName('question');
+		var xuanzes = document.getElementsByClassName('xuanze')[0].getElementsByTagName('input');
+		for(var i = 0 ; i < xuanze.length;i++){
+			answer = answer + "<p>";
+			for(var j = 0 ; j < 4;j++){
+				var temp = xuanzes[i*4+j];
+				if(temp.checked){
+					answer = answer + temp.value+"   ";
+				}
+			}
+			answer = answer+"</p>";
+		}
+
+		answer = answer+"<h3>多择题回答：</h3>";
+		var duoze = document.getElementsByClassName('duoze')[0].getElementsByClassName('question');
+		var duozes = document.getElementsByClassName('duoze')[0].getElementsByTagName('input');
+		for(var i = 0 ; i < duoze.length;i++){
+			answer = answer + "<p>";
+			for(var j = 0 ; j < 4;j++){
+				var temp = duozes[i*4+j];
+				if(temp.checked){
+					answer = answer + temp.value+"   ";
+				}
+			}
+			answer = answer+"</p>";
+		}
+
+		answer = answer+"<h3>判断题回答：</h3>";
+		var panduan = document.getElementsByClassName('panduan')[0].getElementsByClassName('question');
+		var panduans = document.getElementsByClassName('panduan')[0].getElementsByTagName('input');
+		for(var i = 0 ; i < panduan.length;i++){
+			answer = answer + "<p>";
+			for(var j = 0 ; j < 2;j++){
+				var temp = panduans[i*2+j];
+				if(temp.checked){
+					answer = answer + temp.value+"   ";
+				}
+			}
+			answer = answer+"</p>";
+		}
+
+		answer = answer+"<h3>简答题回答：</h3>";
+		answer = answer+"<p>"+document.getElementById('q7').innerHTML+"</p>";
+
+		document.getElementById('answer').innerHTML = answer;
+		
+		document.getElementById('answer').className = "show";
+
+		alert("分数为：100分；单击确定查看答案");
+	}
+	</script>
 </body>
 </html>
